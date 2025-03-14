@@ -139,3 +139,87 @@ h3{
     gap: 20px; /* Espacio entre los elementos */
     justify-content: center; /* Centrar los elementos horizontalmente */
 }
+/* Estilos para la sección CONTACTO */
+#CONTACTO {
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario en la página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#CONTACTO h4 {
+    text-align: center;
+    font-size: 24px;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+/* Estilos para los contenedores de los campos */
+#contactForm div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espacio entre el label y el input */
+}
+
+/* Estilos para las etiquetas */
+#contactForm label {
+    font-size: 16px;
+    color: #555; /* Color del texto */
+    font-weight: bold;
+}
+
+/* Estilos para los campos de entrada */
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Quitar el borde al hacer clic */
+    transition: border-color 0.3s ease; /* Transición suave */
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #007bff; /* Cambiar color del borde al enfocar */
+}
+
+/* Estilos para el textarea */
+#contactForm textarea {
+    resize: vertical; /* Permitir redimensionar solo verticalmente */
+    min-height: 100px; /* Altura mínima */
+}
+
+/* Estilos para los botones */
+#contactForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* Color del texto */
+    background-color: #007bff; /* Color de fondo */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+#contactForm button[type="reset"] {
+    background-color: #6c757d; /* Color de fondo para el botón RESET */
+}
+
+#contactForm button:hover {
+    background-color: #0056b3; /* Cambiar color al pasar el mouse */
+}
+
+#contactForm button[type="reset"]:hover {
+    background-color: #5a6268; /* Cambiar color al pasar el mouse */
+}
