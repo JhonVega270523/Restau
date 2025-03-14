@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANTE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#ENTRADAS">ENTRADAS</a></li>
+            <li><a href="#PLATOS">PLATOS PRINCIPALES</a></li>
+            <li><a href="#POSTRES">POSTRES</a></li>
+            <li><a href="#BEBIDAS">BEBIDAS</a></li>
+            <li><a href="#PRECIOS">PRECIOS</a></li>
+            <li><a href="#CONTACTO">CONTACTO</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Menú del Restaurante</h1>
+
+        <h1>_________________________________________________________________________________________</h1>
+
+        <section id="ENTRADAS">
+            <h3>ENTRADAS</h3>
+            <div class="plato">
+                <h4>Ensalada César</h4>
+                <img src="images/ensalada.jpg" alt="ensalada">
+                <p>Lechuga, queso parmesano, crutones y aderezo especial.</p>
+            </div>
+            <div class="plato">
+                <h4>Sopa de Tomate</h4>
+                <img src="images/sopa.jpg" alt="sopa">
+                <p>Tomates frescos con hierbas aromáticas.</p>
+            </div>
+        </section>
+
+        <h1>_________________________________________________________________________________________</h1>
+
+        <section id="PLATOS">
+            <h3>PLATOS</h3>
+            <div class="plato">
+                <h4>Filete de Res</h4>
+                <img src="images/res.jpg" alt="res">
+                <p>Acompañado de puré de papas y verduras al vapor.</p>
+            </div>
+            <div class="plato">
+                <h4>Pechuga de Pollo</h4>
+                <img src="images/pollo.jpg" alt="pollo">
+                <p>Pollo a la plancha con ensalada fresca.</p>
+            </div>
+        </section>
+
+        <h1>_________________________________________________________________________________________</h1>
+
+        <section id="POSTRES">
+            <h3>POSTRES</h3>
+            <div class="plato">
+                <h4>Pastel de Chocolate</h4>
+                <img src="images/chocolate.jpg" alt="chocolate">
+                <p>Bizcocho de chocolate con crema de avellanas.</p>
+            </div>
+            <div class="plato">
+                <h4>Helado de Vainilla</h4>
+                <img src="images/vainilla.jpg" alt="vainilla">
+                <p>Helado cremoso con trozos de galleta.</p>
+            </div>
+        </section>
+
+        <h1>_________________________________________________________________________________________</h1>
+        
+        <section id="BEBIDAS">
+            <h3>BEBIDAS</h3>
+            <div class="plato">
+                <h4>Café</h4>
+                <img src="images/cafe.jpg" alt="cafe">
+                <p>Café colombiano recién preparado.</p>
+            </div>
+            <div class="plato">
+                <h4>Zumo de Naranja</h4>
+                <img src="images/naranja.jpg" alt="naranja">
+                <p>Zumo natural de naranjas frescas.</p>
+            </div>
+        </section>
+
+        <h1>_________________________________________________________________________________________</h1>
+
+        <section id="PRECIOS">
+
+            <h4>TABLA DE PRECIOS</h4>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Entradas</td>
+                        <td>Ensalada César</td>
+                        <td>$5.99</td>
+                    </tr>
+                    <tr>
+                        <td>Entradas</td>
+                        <td>Sopa de Tomate</td>
+                        <td>$4.99</td>
+                    </tr>
+                    <tr>
+                        <td>Platos Principales</td>
+                        <td>Filete de Res</td>
+                        <td>$15.99</td>
+                    </tr>
+                    <tr>
+                        <td>Platos Principales</td>
+                        <td>Pechuga de Pollo</td>
+                        <td>$12.99</td>
+                    </tr>
+                    <tr>
+                        <td>Postres</td>
+                        <td>Pastel de Chocolate</td>
+                        <td>$6.50</td>
+                    </tr>
+                    <tr>
+                        <td>Postres</td>
+                        <td>Helado de Vainilla</td>
+                        <td>$4.50</td>
+                    </tr>
+                    <tr>
+                        <td>Bebidas</td>
+                        <td>Café</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>Bebidas</td>
+                        <td>Zumo de Naranja</td>
+                        <td>$3.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <h1>_________________________________________________________________________________________</h1>
+
+        <section id="CONTACTO">
+            <h4>CONTACTO</h4>
+            <form id="contactForm">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                </div>
+
+                <button type="submit">ENVIAR</button>
+                <button type="reset">RESET</button>
+            </form>
+        </section>
+
+        <h1>_________________________________________________________________________________________</h1>
+
+        <footer>
+            <h5>© 2025 Restaurante - Todos los derechos reservados.</h5>
+        </footer>
+
+    </div>
+</body>
+</html>
