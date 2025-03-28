@@ -1,180 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESTAURANTE</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <nav>
-        <ul>
-            <li><a href="#ENTRADAS">ENTRADAS</a></li>
-            <li><a href="#PLATOS">PLATOS PRINCIPALES</a></li>
-            <li><a href="#POSTRES">POSTRES</a></li>
-            <li><a href="#BEBIDAS">BEBIDAS</a></li>
-            <li><a href="#PRECIOS">PRECIOS</a></li>
-            <li><a href="#CONTACTO">CONTACTO</a></li>
-        </ul>
+        <div class="nav-container">
+            <h3 class="logo">RESTAURANTE</h3>
+            <ul>
+                <li><a href="#entradas">Entradas</a></li>
+                <li><a href="#principales">Principales</a></li>
+                <li><a href="#postres">Postres</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
-    
+
     <div class="container">
-        <h1>Menú del Restaurante</h1>
+        <h1 class="title-animation"><span>Menú del Restaurante</span></h1>
 
-        <h1>_________________________________________________________________________________________</h1>
-
-        <section id="ENTRADAS">
-            <h3>ENTRADAS</h3>
-            <div class="plato">
-                <h4>Ensalada César</h4>
-                <img src="images/ensalada.jpg" alt="ensalada">
-                <p>Lechuga, queso parmesano, crutones y aderezo especial.</p>
-            </div>
-            <div class="plato">
-                <h4>Sopa de Tomate</h4>
-                <img src="images/sopa.jpg" alt="sopa">
-                <p>Tomates frescos con hierbas aromáticas.</p>
-            </div>
-        </section>
-
-        <h1>_________________________________________________________________________________________</h1>
-
-        <section id="PLATOS">
-            <h3>PLATOS</h3>
-            <div class="plato">
-                <h4>Filete de Res</h4>
-                <img src="images/res.jpg" alt="res">
-                <p>Acompañado de puré de papas y verduras al vapor.</p>
-            </div>
-            <div class="plato">
-                <h4>Pechuga de Pollo</h4>
-                <img src="images/pollo.jpg" alt="pollo">
-                <p>Pollo a la plancha con ensalada fresca.</p>
+        <section id="entradas" class="card-section">
+            <h2>ENTRADAS</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/ensalada.jpg" alt="Ensalada César">
+                    <div class="card-content">
+                        <h3>Ensalada César</h3>
+                        <p>Lechuga, queso parmesano, crutones y aderezo especial.</p>
+                        <span class="price">$23.900</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/sopa.jpg" alt="Sopa de Tomate">
+                    <div class="card-content">
+                        <h3>Sopa de Tomate</h3>
+                        <p>Tomates frescos con hierbas aromáticas.</p>
+                        <span class="price">$19.900</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <h1>_________________________________________________________________________________________</h1>
-
-        <section id="POSTRES">
-            <h3>POSTRES</h3>
-            <div class="plato">
-                <h4>Pastel de Chocolate</h4>
-                <img src="images/chocolate.jpg" alt="chocolate">
-                <p>Bizcocho de chocolate con crema de avellanas.</p>
-            </div>
-            <div class="plato">
-                <h4>Helado de Vainilla</h4>
-                <img src="images/vainilla.jpg" alt="vainilla">
-                <p>Helado cremoso con trozos de galleta.</p>
-            </div>
-        </section>
-
-        <h1>_________________________________________________________________________________________</h1>
-        
-        <section id="BEBIDAS">
-            <h3>BEBIDAS</h3>
-            <div class="plato">
-                <h4>Café</h4>
-                <img src="images/cafe.jpg" alt="cafe">
-                <p>Café colombiano recién preparado.</p>
-            </div>
-            <div class="plato">
-                <h4>Zumo de Naranja</h4>
-                <img src="images/naranja.jpg" alt="naranja">
-                <p>Zumo natural de naranjas frescas.</p>
+        <section id="principales" class="card-section">
+            <h2>PLATOS PRINCIPALES</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/res.jpg" alt="Filete de Res">
+                    <div class="card-content">
+                        <h3>Filete de Res</h3>
+                        <p>Acompañado de puré de papas y verduras al vapor.</p>
+                        <span class="price">$63.900</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/pollo.jpg" alt="Pechuga de Pollo">
+                    <div class="card-content">
+                        <h3>Pechuga de Pollo</h3>
+                        <p>Pollo a la plancha con ensalada fresca.</p>
+                        <span class="price">$51.900</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <h1>_________________________________________________________________________________________</h1>
-
-        <section id="PRECIOS">
-
-            <h4>TABLA DE PRECIOS</h4>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Categoría</th>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Entradas</td>
-                        <td>Ensalada César</td>
-                        <td>$5.99</td>
-                    </tr>
-                    <tr>
-                        <td>Entradas</td>
-                        <td>Sopa de Tomate</td>
-                        <td>$4.99</td>
-                    </tr>
-                    <tr>
-                        <td>Platos Principales</td>
-                        <td>Filete de Res</td>
-                        <td>$15.99</td>
-                    </tr>
-                    <tr>
-                        <td>Platos Principales</td>
-                        <td>Pechuga de Pollo</td>
-                        <td>$12.99</td>
-                    </tr>
-                    <tr>
-                        <td>Postres</td>
-                        <td>Pastel de Chocolate</td>
-                        <td>$6.50</td>
-                    </tr>
-                    <tr>
-                        <td>Postres</td>
-                        <td>Helado de Vainilla</td>
-                        <td>$4.50</td>
-                    </tr>
-                    <tr>
-                        <td>Bebidas</td>
-                        <td>Café</td>
-                        <td>$2.50</td>
-                    </tr>
-                    <tr>
-                        <td>Bebidas</td>
-                        <td>Zumo de Naranja</td>
-                        <td>$3.00</td>
-                    </tr>
-                </tbody>
-            </table>
-
+        <section id="postres" class="card-section">
+            <h2>POSTRES</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/chocolate.jpg" alt="Pastel de Chocolate">
+                    <div class="card-content">
+                        <h3>Pastel de Chocolate</h3>
+                        <p>Bizcocho de chocolate con crema de avellanas.</p>
+                        <span class="price">$25.900</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/vainilla.jpg" alt="Helado de Vainilla">
+                    <div class="card-content">
+                        <h3>Helado de Vainilla</h3>
+                        <p>Helado cremoso con trozos de galleta.</p>
+                        <span class="price">$17.900</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <h1>_________________________________________________________________________________________</h1>
+        <section id="bebidas" class="card-section">
+            <h2>BEBIDAS</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/cafe.jpg" alt="Café">
+                    <div class="card-content">
+                        <h3>Café</h3>
+                        <p>Café colombiano recién preparado.</p>
+                        <span class="price">$9.900</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/naranja.jpg" alt="Zumo de Naranja">
+                    <div class="card-content">
+                        <h3>Zumo de Naranja</h3>
+                        <p>Zumo natural de naranjas frescas.</p>
+                        <span class="price">$11.900</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="CONTACTO">
-            <h4>CONTACTO</h4>
-            <form id="contactForm">
-                <div>
+        <section id="precios" class="table-section">
+            <h2>TABLA DE PRECIOS</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Entradas</td>
+                            <td>Ensalada César</td>
+                            <td>$23.900</td>
+                        </tr>
+                        <tr>
+                            <td>Entradas</td>
+                            <td>Sopa de Tomate</td>
+                            <td>$19.900</td>
+                        </tr>
+                        <tr>
+                            <td>Platos Principales</td>
+                            <td>Filete de Res</td>
+                            <td>$63.900</td>
+                        </tr>
+                        <tr>
+                            <td>Platos Principales</td>
+                            <td>Pechuga de Pollo</td>
+                            <td>$51.900</td>
+                        </tr>
+                        <tr>
+                            <td>Postres</td>
+                            <td>Pastel de Chocolate</td>
+                            <td>$25.900</td>
+                        </tr>
+                        <tr>
+                            <td>Postres</td>
+                            <td>Helado de Vainilla</td>
+                            <td>$17.900</td>
+                        </tr>
+                        <tr>
+                            <td>Bebidas</td>
+                            <td>Café</td>
+                            <td>$9.900</td>
+                        </tr>
+                        <tr>
+                            <td>Bebidas</td>
+                            <td>Zumo de Naranja</td>
+                            <td>$11.900</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contacto" class="form-section">
+            <h2>CONTACTO</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Nombre">
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Email">
+                    <input type="email" id="email" placeholder="tu@email.com" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                    <textarea id="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
                 </div>
-
-                <button type="submit">ENVIAR</button>
-                <button type="reset">RESET</button>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-primary" onclick="enviarFormulario()">
+                        <i class="fas fa-paper-plane"></i> ENVIAR
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="resetFormulario()">
+                        <i class="fas fa-undo"></i> LIMPIAR
+                    </button>
+                </div>
             </form>
         </section>
 
-        <h1>_________________________________________________________________________________________</h1>
-
         <footer>
-            <h5>© 2025 Restaurante - Todos los derechos reservados.</h5>
+            <div class="footer-content">
+                <p>© 2025 Restaurante. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
         </footer>
-
     </div>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        function enviarFormulario() {
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+            
+            if(nombre && email && mensaje) {
+                alert(`Gracias ${nombre}, tu mensaje ha sido enviado. Te responderemos a ${email} pronto.`);
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Por favor completa todos los campos del formulario.');
+            }
+        }
+
+        function resetFormulario() {
+            document.getElementById('contactForm').reset();
+        }
+
+        // Botón para subir
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
