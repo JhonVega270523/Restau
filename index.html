@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESTAURANTE</title>
-    <link rel="stylesheet" href="style.css">
+    <title>RESTAURANTE DELICIOSO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav>
         <div class="nav-container">
-            <h3 class="logo">RESTAURANTE</h3>
+            <h3 class="logo">Delicioso</h3>
             <ul>
                 <li><a href="#entradas">Entradas</a></li>
                 <li><a href="#principales">Principales</a></li>
@@ -24,7 +24,7 @@
     </nav>
 
     <div class="container">
-        <h1 class="title-animation"><span>Menú del Restaurante</span></h1>
+        <h1 class="title-animation">Menú del Restaurante <span>Delicioso</span></h1>
 
         <section id="entradas" class="card-section">
             <h2>ENTRADAS</h2>
@@ -199,7 +199,7 @@
 
         <footer>
             <div class="footer-content">
-                <p>© 2025 Restaurante. Todos los derechos reservados.</p>
+                <p>© 2025 Restaurante Delicioso. Todos los derechos reservados.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -245,6 +245,22 @@
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Scroll suave para el navbar
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
     </script>
 </body>

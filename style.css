@@ -1,4 +1,3 @@
-/* Variables de color */
 :root {
     --primary-color: #e74c3c;
     --secondary-color: #3498db;
@@ -11,7 +10,6 @@
     --transition: all 0.3s ease;
 }
 
-/* Estilos generales */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -43,6 +41,7 @@ h2 {
     margin-bottom: 40px;
     position: relative;
     color: var(--dark-color);
+    scroll-margin-top: 80px;
 }
 
 h2::after {
@@ -54,7 +53,6 @@ h2::after {
     margin: 15px auto;
 }
 
-/* Navbar mejorado */
 nav {
     background-color: var(--dark-color);
     padding: 15px 0;
@@ -108,7 +106,6 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Título animado */
 .title-animation {
     text-align: center;
     position: relative;
@@ -143,7 +140,6 @@ nav ul li a:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Secciones con tarjetas */
 .card-section {
     margin-bottom: 60px;
 }
@@ -198,7 +194,6 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Tabla mejorada */
 .table-section {
     margin-bottom: 60px;
 }
@@ -235,7 +230,6 @@ tr:hover {
     background-color: #e9e9e9;
 }
 
-/* Formulario optimizado */
 .form-section {
     margin-bottom: 60px;
 }
@@ -318,7 +312,6 @@ textarea {
     background-color: #bdc3c7;
 }
 
-/* Footer */
 footer {
     background-color: var(--dark-color);
     color: white;
@@ -346,7 +339,6 @@ footer {
     color: var(--primary-color);
 }
 
-/* Botón para subir */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -376,7 +368,6 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
